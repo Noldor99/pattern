@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+//simple
 export const About = () => {
   return (
     <section className="py-8 sm:py-20">
