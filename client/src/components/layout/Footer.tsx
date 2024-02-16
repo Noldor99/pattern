@@ -5,7 +5,7 @@ import {
 } from "@tabler/icons-react"
 
 import { Button } from "@/components/ui/button"
-
+//simple
 export const Footer = () => {
   const links = [
     {

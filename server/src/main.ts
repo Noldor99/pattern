@@ -5,7 +5,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config'
 import * as cookieParser from 'cookie-parser'
 
-
+//simple
 async function start() {
   const PORT = process.env.PORT || 4000
 
