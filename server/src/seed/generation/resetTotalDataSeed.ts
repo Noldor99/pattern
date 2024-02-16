@@ -1,21 +1,23 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { Role } from '../../roles/role.entity';
+import { User } from '../../user/user.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
 export class ResetTotalDataSeed {
   constructor(
-    // @InjectRepository(User)
-    // private readonly userRepository: Repository<User>,
-    // @InjectRepository(Role) private roleRepository: Repository<Role>
+    @InjectRepository(User)
+    private readonly userRepository: Repository<User>,
+    @InjectRepository(Role) private roleRepository: Repository<Role>
   ) { }
 
   async seed(): Promise<void> {
 
-    // const roles = await this.roleRepository.find();
-    // const users = await this.userRepository.find();
+    const roles = await this.roleRepository.find();
+    const users = await this.userRepository.find();
 
-    // await this.roleRepository.remove(roles);
-    // await this.userRepository.remove(users);
+    await this.roleRepository.remove(roles);
+    await this.userRepository.remove(users);
   }
 }
