@@ -10,7 +10,7 @@ interface WrapPaginationParam {
 const WrapPagination = ({ totalCount }: WrapPaginationParam) => {
   const searchParams = useSearchParams()
 
-  const initialPage = searchParams.get("page") || "1"
+  const initialPage = searchParams?.get("page") || "1"
 
   return (
     <div>

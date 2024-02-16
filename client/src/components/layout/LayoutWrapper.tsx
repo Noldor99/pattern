@@ -16,7 +16,7 @@ export const LayoutWrapper = ({ children }: RootLayoutPropsType) => {
     <>
       <Header />
       {children}
-      {pathname.includes("/admin") ? null : <Footer />}
+      {pathname?.includes("/admin") ? null : <Footer />}
       <Toaster />
     </>
   )

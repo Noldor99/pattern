@@ -25,7 +25,7 @@ export const LinkWrapper = ({
   const filteredParams = new URLSearchParams()
 
   relevantParams.forEach((param) => {
-    if (searchParams.has(param)) {
+    if (searchParams?.has(param)) {
       filteredParams.set(param, searchParams.get(param)!)
     }
   })
