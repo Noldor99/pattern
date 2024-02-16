@@ -3,9 +3,9 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config'
-import cookieParser from 'cookie-parser';
+import * as cookieParser from 'cookie-parser';
 
-//simple
+
 async function start() {
   const PORT = process.env.PORT || 4000
 
