@@ -9,9 +9,9 @@ export const generateMetadata = async () => {
 
 const HomePage = async () => {
   return (
-    <main className="flex-1">
+    <section>
       <About />
-    </main>
+    </section>
   )
 }
 

@@ -15,7 +15,7 @@ export const LayoutWrapper = ({ children }: RootLayoutPropsType) => {
   return (
     <>
       <Header />
-      {children}
+      <main className="flex-1">{children}</main>
       {pathname?.includes("/admin") ? null : <Footer />}
       <Toaster />
     </>

@@ -2,7 +2,7 @@ import Image from "next/image"
 //simple
 export const About = () => {
   return (
-    <section className="py-8 sm:py-20">
+    <div className="py-8 sm:py-20">
       <div className="container">
         <h2 className="t-h2 mb-8 w-full pb-6 pl-6  text-left">About</h2>
 
@@ -26,6 +26,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

@@ -7,11 +7,11 @@ export const generateMetadata = async () => {
 
 const NewsPage = () => {
   return (
-    <main className="flex-1">
+    <section>
       <div className="container">
         <h3 className="text-center">NewsPage</h3>
       </div>
-    </main>
+    </section>
   )
 }
 
