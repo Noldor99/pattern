@@ -20,7 +20,7 @@ async function start() {
   app.useGlobalPipes(new ValidationPipe());
 
   app.use((req, res, next) => {
-    const allowedOrigins = ['https://pattern-k43vqibz5-noldor99.vercel.app/', 'http://localhost:7777'];
+    const allowedOrigins = ['https://pattern-k43vqibz5-noldor99.vercel.app', 'http://localhost:7777'];
 
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {

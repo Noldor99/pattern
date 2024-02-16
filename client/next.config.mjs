@@ -4,6 +4,7 @@ const nextConfig = {
     remotePatterns: [
       { hostname: "localhost" },
       { hostname: "https://pattern-85d1-khrbwfqay-noldor99.vercel.app" },
+      { hostname: "https://pattern-wrkb.onrender.com" },
       { hostname: "loremflickr.com" },
     ],
   },
